@@ -9,7 +9,7 @@ template:
       label: Nome completo
       placeholder: Seu nome completo
     handle:
-      label: Lidar
+      label: Identificador
       placeholder: Nome curto, apelido ou apelido
     preferred-language:
       label: Língua preferida

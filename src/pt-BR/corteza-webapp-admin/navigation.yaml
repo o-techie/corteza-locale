@@ -8,6 +8,8 @@ system:
     apigw: Gateway de integração
     applications: Formulários
     authclients: Clientes de autenticação
+    connections: Conexões
+    sensitivityLevel: Níveis de sensibilidade
     permissions: Permissões
     queues: Filas de mensagens
     roles: Funções

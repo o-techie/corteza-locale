@@ -1,22 +1,48 @@
+clear: Limpar
 description: Descrição
 enabled: Habilitado
 error: Erro
-'error-expression': Mensagem de erro (expressão)
+error-expression: Mensagem de erro (expressão)
 export: Exportar
 general: Em geral
-handle: Lidar
+handle: Identificador *
 import:
   json: Importar JSON
   label: Importar
-  'reassign-run-as': "OBSERVE que a propriedade Executar como fluxo de trabalho não será importada e deverá ser reatribuída"
-  'upload-files': Procure ou solte arquivos para fazer upload...
+  reassign-run-as: "OBSERVE que a propriedade Executar como fluxo de trabalho não será importada e deverá ser reatribuída"
+  upload-files: Procure ou solte arquivos para fazer upload...
 label: Rótulo
+loading: Loading
 name: Nome
-'new-workflow': Novo fluxo de trabalho
+new-workflow': Novo fluxo de trabalho
+none: Nenhum
+now: Agora
+
 offset: Desvio
+offset-expression: Desvio (expressão)
 permissions: Permissões
-'search-workflows': Digite aqui para pesquisar todos os fluxos de trabalho...
-'unnamed-workflow': Fluxo de trabalho sem nome
-'workflow-list': Lista de fluxos de trabalho
+search-workflows: Digite aqui para pesquisar todos os fluxos de trabalho...
+subworkflow: Subfluxo de trabalho
+subworkflows: Subfluxos de trabalho
+deleted: Excluído
+disabled: Desabilitado
+without: Excluindo
+only: Apenas
+including: Incluindo
+unnamed-workflow: Fluxo de trabalho sem nome
+workflow-list: Lista de fluxos de trabalho
 save: Salvar
+today: Hoje
 cancel: Cancelar
+resourceList:
+  notFound: Não encontrado
+  noItems: Sem itens para mostrar
+  pagination:
+    next: Próximo
+    prev: Anterior
+    showing: '{{from}} - {{to}} de {{count}} itens'
+    single: Um item
+    single_plural: '{{count}} itens'
+
+tooltip:
+  permissions: Permissões de fluxo de trabalho

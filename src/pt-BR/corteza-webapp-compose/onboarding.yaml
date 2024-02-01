@@ -22,3 +22,7 @@ step:
   page:
     create: Criar página
     view: Suas páginas
+tooltip:
+  page-configuration:
+    edit: Editar página
+    list: Traduções de página

@@ -1,7 +1,7 @@
 list:
   rules:
-    add: Add role
-    addRole: Add new role
+    add: Adicionar papel
+    addRole: Adicionar novo papel
     component:
       operations:
         grant: Grant permissions on automation

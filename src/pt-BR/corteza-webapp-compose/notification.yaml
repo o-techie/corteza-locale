@@ -7,6 +7,7 @@ chart:
   invalidConfig:
     missingDimensionsField: Campo de dimensões não definido
     missingDimensionsModifier: Modificador de dimensões não definido
+    missingDimensionsSteps: As etapas de dimensões não estão definidas
     missingMetricsAggregate: Agregado de métricas não definido
     missingMetricsField: Campo de métricas não definido
     missingMetricsType: Tipo de gráfico de métricas não definido
@@ -37,6 +38,9 @@ general:
     readingError: Erro ao ler o arquivo
     successful: Importação bem-sucedida
     typeMissmatch: 'Erro de importação ao tentar importar objeto do tipo "{{type1}}" para uma lista de objetos do tipo "{{type2}}"'
+list:
+  load:
+    error: Falha ao carregar lista de recurso
 module:
   createFailed: Não foi possível criar um módulo
   deleteFailed: Não foi possível excluir este módulo
@@ -86,3 +90,20 @@ record:
   unexpectedValue: Valor não experado para registro de módulo ({{type}})
   updateFailed: Não foi possível atualizar o registro
   validationErrors: verifique as mensagens de erro no formulário
+  validationWarnings: Registro salvo com sucesso, verifique mensagens de aviso no formulário
+  staleDataRefresh: Dados de registro obsoletos, todas as alterações não salvas serão perdidas. Deseja atualizar os dados agora?
+record-list:
+  corrupted-filter: Filtro corrompido
+  incorrect-filter-structure: Estrutura incorreta do filtro {{filterID}}
+report:
+  listFetchFailed: Falha ao resgatar relatórios
+  fetchFailed: Falha ao resgatar relatório
+  runFailed: Falha ao executar relatório
+translations:
+  saved: Traduções salvas
+  saveFailed: Não foi possível salvar as traduções
+connection:
+  read-failed: Falha ao ler conexão
+sensitivity-level:
+  fetch-failed: Falha ao resgatar níveis de confidencialidade
+

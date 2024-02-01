@@ -27,7 +27,7 @@ invalid: Configuração inválida
 label:
   cancel: Cancelar
   description: Descrição
-  handle: Lidar
+  handle: Identificador
   pageBuilder: Criador de páginas
   permissions: Permissões
   saveAndClose: Salvar e fechar
@@ -42,6 +42,21 @@ notVisible: Escondido
 pageMoveFailed: Não foi possível mover esta página
 reordered: Página reordenada
 title: Lista de páginas
+tooltip:
+  view: Visualizar página
+  edit:
+    page: Editar página
+    block: Editar bloco
 view: Visualizar
 visible: Visível
-deleteDisabled: Remova as subpáginas para excluir esta página
+delete:
+  rebase: Atualizar pai de subpáginas
+  cascade: Deletar subpáginas
+public:
+  record:
+    create:
+      title: Criando registro para módulo "{{name}}"
+    edit:
+      title: Editando registro para módulo "{{name}}"
+    view:
+      title: Visualizando registro para módulo "{{name}}"

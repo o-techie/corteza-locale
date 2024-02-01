@@ -89,14 +89,14 @@ chart:
         week: SEMANA
         year: ANO
   label: Gráfico
-  noChart: Sem gráficos
   pick: Escolha um gráfico
   preview:
     chartId: Visualização do gráfico (ID {{0}})
   searchPlaceholder: Digite aqui para pesquisar todos os gráficos neste namespace
 content:
-  label: Contente
-  ok: OK
+  ok: Ok
+  label: Conteúdo
+  openLinkInNewTab: Abrir link em uma nova aba
   urlPlaceholder: https://exemplo.tld
 file:
   label: Arquivo
@@ -107,6 +107,7 @@ general:
   descriptionLabel: Descrição
   descriptionPlaceholder: Descrição do bloco
   headerStyle: Estilo do cabeçalho do bloco (cor)
+  wrap: Exibir bloco como um cartão
   label:
     add: Adicionar
     back: Voltar
@@ -133,6 +134,7 @@ general:
   titlePlaceholder: Título do bloco
   tooltip:
     dragAndDrop: Arraste e solte para alterar a ordem
+    translations: Tradução de campo
 iframe:
   label: IFrame
   pickURLField: Escolha um campo de URL
@@ -248,7 +250,10 @@ recordList:
     note: 'Observação Se o valor do campo for indefinido, o filtro procurará registros em que o valor do campo seja indefinido.'
     only: Apenas
     operators:
+      like: Curtir
+      notLike: Não curtir
       contains: Contém
+      notContains: Não contém
       equal: Igual
       greaterThan: Maior que
       lessThan: Menor que
@@ -256,7 +261,7 @@ recordList:
     title: Filtro da lista de registros
     update: Atualizar filtro
     where: Onde
-    without: Sem
+    without: Excluindo
   hideRecordCloneButton: Ocultar botão de registro de clone
   hideRecordEditButton: Ocultar botão de edição de registro
   hideRecordPermissionsButton: Ocultar botão de permissões de gravação
@@ -340,16 +345,27 @@ recordList:
     prefilterLabel: Registros de pré-filtro
     prefilterPlaceholder: campo1 = 1 E campo2 = 232
     presortFootnote: A sintaxe de condição SQL simplificada (ORDER BY ...) é suportada.
+    presortToggleInput: Alternar tipo de entrada
     presortHideSort: Ocultar classificação
     presortLabel: Pré-classificação de registros
     presortPlaceholder: campo1 DESC, campo2 ASC
     showTotalCount: Mostrar contagem total de registros
+    openInNewTab: Abrir registros em uma nova aba
+    linkToParent: Vincular ao registro pai
+    tooltip:
+      clone: Clonar registro
+      edit: Editar registro
+      undelete: Recuperar registro
+      reminder: Lembrete
+      view: Ver registro
   recordPage: página de registro
   refField:
     footnote: Campo que vincula registros com o registro pai
     label: Campo pai
   selectable: Ativar seleção de registro
   selected: '{{count}} de {{total}} registros selecionados'
+  sort:
+    tooltip: Orgenar coluna
 recordOrganizer:
   descriptionField:
     footnote: O valor do campo será usado como descrição do registro
@@ -362,7 +378,7 @@ recordOrganizer:
     label: Campo-chave
   label: Organizador de registros
   labelField:
-    footnote: O valor do campo será usado como etiqueta de registro
+    footnote: O valor do campo será usado como rótulo de registro
     label: Campo de rótulo
   noRecords: Não há registros no módulo vinculado ao organizador de registros. Arraste e solte registros aqui.
   notConfigured: O organizador de registros não está configurado corretamente.
@@ -370,8 +386,56 @@ recordOrganizer:
     footnote: Os registros serão classificados com base neste campo
     label: Campo de classificação de registro
   preview:
-    label: 'Bloco Organizador de Registros para o módulo {{0}}. Campo de etiqueta {{1}}, campo de descrição {{2}}. Campo de configuração de valor {{3}}, classificado por campo de posição {{4}}.'
+    label: 'Bloco Organizador de Registros para o módulo {{0}}. Campo de rótulo {{1}}, campo de descrição {{2}}. Campo de configuração de valor {{3}}, classificado por campo de posição {{4}}.'
     moduleNotSelected: Módulo do organizador de registros não selecionado.
+  addNewRecord: + Adicionar novo registro
+
+recordRevisions:
+  label: Revisões de registro
+
+  viewer:
+    errors:
+      no-record: Nenhum registro encontrado para exibir as revisões.
+      disabled-on-module: As revisões de registros estão desabilitadas neste módulo.
+
+    show-revisions: Mostrar regisões de registro ({{ revision }})
+    show-changes: "{{ count }} alteração(ões)"
+    revisions:
+      columns:
+        timestamp:
+          label: Carimbo de data e hora
+        operation:
+          label: Operação
+        user:
+          label: Usuário
+    changes:
+      columns:
+        field:
+          label: Campo
+        old-value:
+          label: Valor antigo
+        new-value:
+          label: Valor novo
+
+  configurator:
+    label: Registro de revisões
+    preload: Pré-carregar revisões de registros
+    errors:
+      invalid-module-id: O campo não contém um ID de módulo válido.
+    fields:
+      label: Configurar campos para exibição em alterações de revisões de registros
+      show-all:
+        label: Mostrar alterações para todos os campos
+      columns:
+        label:
+          label: Rótulo
+        kind:
+          label: Tipo
+        displayed-fields:
+          label: Exibir
+        expanded-references:
+          label: Expandir referências
+
 socialFeed:
   label: Feed do Twitter
   noInput: Nenhuma entrada para exibir o feed social...
@@ -406,3 +470,51 @@ comment:
     footnote: 'O valor do campo será usado como referência'
 navigation:
   chart: Gráficos
+report:
+  label: Relatório
+  scenario:
+    label: Cenário
+  element:
+    label: Exibir elemento
+    description: Os elementos de exibição são agrupados por seu respectivo bloco
+
+progress:
+  add: + Add
+  aggregate:
+    label: Operação de agregação
+    select: Selecione a operação de agregação
+  animated: Animado
+  default-variant: Variante padrão
+  display-options: Exibir opções
+  fetch-failed: Falha ao resgatar o relatório da barra de progresso
+  field:
+    label: Campo
+    select: Selecionar campo
+  label: Barra de progresso
+  module:
+    select: Selecionar módulo
+    label: Módulo
+  preview: Exemplo ao vivo
+  show:
+    value: Exibir valor
+    relative: Exibir relativo
+    progress: Exibir progresso
+  tab:
+    label: Progresso
+  thresholds: Limites
+  threshold:
+    label: Limite
+    variant: Defina qual variante mostrar se o valor for igual ou maior que o limite
+  value:
+    label: Valor
+    max: Valor máximo
+  variant:
+    default: Escuro
+    danger: Perigo
+    dark: Escupo
+    info: Info
+    light: Claro
+    primary: Primário
+    secondary: Secundário
+    success: Sucesso
+    warning: Aviso

@@ -19,6 +19,8 @@ createLabel: Novo módulo
 edit:
   create: Criar módulo
   edit: Editar módulo
+  fields:
+    label: Campos
   federationSettings:
     downstream:
       allFields: Todos os campos
@@ -51,6 +53,11 @@ edit:
       allFields: Todos os campos
       description: Selecione os campos que deseja compartilhar com a rede selecionada
       title: Expor
+  discoverySettings:
+    title: Configurações de descoberta
+    public: Público
+    private: Privado
+    protected: Protegido
   fieldPermissions: Permissões de campo
   manageRecordFields: Gerenciar campos de registro
   moduleFieldSettings: Configurações de campo do módulo
@@ -69,6 +76,88 @@ edit:
     private: Dados sensíveis
     required: Campo obrigatório
     title: O nome exibido nas listas de entrada/dados do formulário
+
+  issues:
+    label: Problemas ({{count}})
+
+
+  config:
+    dal:
+      title: Banco de dados
+      connection:
+        label: Conexão com banco de dados
+        placeholder: Selecione uma conexão de banco de dados
+        description: Alterar a conexão redefinirá a configuração do nível de confidencialidade no módulo e nos campos, se o nível de confidencialidade for incompatível com a nova conexão
+      ident:
+        label: Nome da coleção ou tabela de banco de dados
+        placeholder: compose_record
+        description: "Nome da tabela ou coleção do banco de dados onde os registros podem ser acessados e armazenados. Suporta espaços reservados de particionamento: {{module}} para identificador de módulo e {{namespace}} para identificador de namespace"
+
+      connections:
+        fetch-failed: Não foi possível buscar as conexões disponíveis
+
+
+      module-fields:
+        label: Mapeamento e codificação de campo do módulo
+        description: |
+          Configure como os campos de registro são armazenados e lidos no banco de dados.
+          O comportamento padrão é codificar valores em JSON e armazená-los em um único campo.
+          Alternativamente, você pode usar colunas com o mesmo nome do campo (Coluna)
+          ou use um Alias e armazene o valor diretamente na coluna.
+
+      system-fields:
+        label: Mapeamento e codificação de campos do sistema
+        description: |
+          Os campos do sistema são usados para armazenar metadados sobre o registro.
+          Configure para ignorá-los ou armazená-los em uma coluna com o mesmo nome (Coluna),
+          uma coluna diferente (Alias) ou codifique-as em JSON.
+
+      encoding-strategy:
+        ident:
+          placeholder: Nome da coluna do campo ou da tabela de banco de dados
+
+        strategies:
+          plain:
+            label: Coluna
+          alias:
+            label: Alias
+          json:
+            label: JSON
+
+
+    privacy:
+      title: Configurações de Privacidade
+      sensitivity-level:
+        label: Nível máximo de confidencialidade permitido
+        placeholder: Selecione um nível de confidencialidade
+        description: Nível de confidencialidade mais alto permitido para campos neste módulo. Alterar esse valor redefinirá o nível de confidencialidade dos campos se eles forem incompatíveis.
+      usage-disclosure:
+        label: Divulgação de uso de dados confidenciais (visível no console de privacidade de dados)
+
+      sensitivity-levels:
+        fetch-failed: Não foi possível resgatar os níveis de confidencialidade
+
+    record-revisions:
+      title: Registro de Revisões
+      enabled: Habilitar o registro de Revisões
+      ident:
+        label: Identificador
+        placeholder: compose_record_revisions
+        description: 'Nome da tabela ou coleção do banco de dados onde os registros de revisões podem ser acessados e armazenados. Suporta espaços reservados de particionamento: {{module}} para identificador de módulo e {{namespace}} para identificador de namespace'
+
+    validation:
+      title: Validação
+
+      record-duplication:
+        title: Detecção de registros duplicados
+        strict-fields:
+          label: Validação estrita de valor duplicado
+          description: O registro não será salvo quando for detectado valor duplicado nos campos selecionados em algum registro existente deste módulo
+        non-strict-fields:
+          label: Validação de valor duplicado não estritos
+          description: O registro será salvo e o usuário receberá um aviso quando for detectado um valor duplicado nos campos selecionados em qualquer registro existente deste módulo
+
+
 federated: Federado
 forModule:
   recordList: Lista de registros para módulo
@@ -78,7 +167,7 @@ general:
   fields: Campos do módulo
   label:
     attributes: Atributos
-    handle: Lidar
+    handle: Identificador
     name: Nome
     permissions: Permissões
     title: Título
@@ -95,8 +184,16 @@ newLabel: Nome do módulo *
 newPlaceholder: Nome usado na lista de módulos
 noModule: Sem módulos
 noModuleFilter: Nenhum módulo corresponde à sua pesquisa
+
 recordPage:
   create: Criar página de registro
   edit: Criador de páginas
+recordListPage:
+  create: Criar página de lista de registros
+  edit: Editar página da lista de registros
+related-pages: Páginas Relacionadas
 searchPlaceholder: Digite aqui para pesquisar todos os módulos neste namespace
 title: Lista de Módulos
+tooltip:
+  permissions: Permissões de módulo
+

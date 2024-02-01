@@ -31,6 +31,13 @@ edit:
     gaugeSteps: Degraus
     label: Dimensões
     skipMissingValues: Pular valores ausentes
+    optionsPicker:
+      searchPlaceholder: Digite aqui para pesquisar entre as opções selecionadas
+      availableItems: Opções disponíveis
+      selectAllItems: Selecionar tudo
+      selectedItems: Opções selecionadas
+      unselectAllItems: Desmarque todos
+      noItemsFound: Nenhuma opção encontrada
   filter:
     customize: Personalizar filtro
     label: Filtros
@@ -86,6 +93,7 @@ edit:
       placeholder: Selecionar saída de métrica
     relative: Mostrar valor relativo
     relativePrecision: 'Precisão:'
+    cumulative: Cumulativo
     title: Métricas
   module:
     label: Módulo
@@ -96,8 +104,8 @@ edit:
     axisOnRight: Coloque o eixo no lado direito
     axisScaleFromZero: Sempre comece a escala do eixo em zero
     label: Eixo Y
-    labelLabel: Etiqueta do eixo
-    labelPlaceholder: Etiqueta do eixo
+    labelLabel: Rótulo do eixo
+    labelPlaceholder: Rótulo do eixo
     logarithmicScale: Escala logarítmica
     maxLabel: Valor máximo
     maxPlaceholder: Valor máximo
@@ -106,7 +114,7 @@ edit:
 import: 'Importar gráfico(s):'
 newLabel: 'Criar um novo gráfico:'
 name: Nome do gráfico *
-handle: Lidar *
+handle: Identificador *
 notification:
   loadFailed: Não foi possível carregar o gráfico
   saveFailed: Não foi possível salvar este gráfico

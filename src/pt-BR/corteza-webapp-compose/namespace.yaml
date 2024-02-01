@@ -1,7 +1,8 @@
+manage-view:
+  label: Gerenciar namespaces
 application:
   label: Ativar na lista de aplicativos
 clickOpen: Clique para abrir
-create: Criar novo namespace
 import:
   buttonLabel: Importar namespace
   title: Importar namespace
@@ -36,7 +37,6 @@ name:
   label: Nome completo do namespace *
   placeholder: Digite o nome do namespace
 noResults: Nenhum namespace encontrado
-searchPlaceholder: Digite aqui para pesquisar entre todos os namespaces...
 setPermissions: Definir permissões de namespace
 slug:
   description: O nome curto será usado no URL
@@ -47,4 +47,26 @@ subtitle:
   label: Legenda
   placeholder: Insira a legenda do namespace
 title: Namespaces de código baixo
-visit: Visite o namespace
+tooltip:
+  translations: Traduções de namespace
+visit: Visitar namespace
+
+
+manage:
+  title: Gerenciar namespaces
+  list-view: Voltar para lista de namespaces
+
+  disabled: Desabilitado
+
+  toolbar:
+    buttons:
+      create: Criar novo namespace
+      permissions: Permissões
+    search:
+      placeholder: Digite aqui para pesquisar entre todos os namespaces...
+
+  table:
+    columns:
+      name: Nome
+      handle: Identificador
+      last-change: Última alteração

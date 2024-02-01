@@ -1,5 +1,27 @@
 label:
-  add: + Hinzufügen
-  back: Zurück
-  delete: Löschen
-  save: Speichern
+  add: Adicioar
+  and: E
+  ascending: Crescente
+  back: Voltar
+  clear: Limpar
+  delete: Excluir
+  descending: Decrescente
+  loading: Carregando
+  name: Nome
+  none: Nenhum
+  now: Agora
+  ok: Ok
+  or: Ou
+  openLinkInNewTab: Abrir link em uma nova aba
+  save: Salvar
+  today: Hoje
+  urlPlaceholder: https://exemplo.tld
+resourceList:
+  notFound: Não encontrado
+  noItems: Sem itens para mostrar
+  pagination:
+    next: Próximo
+    prev: Anterior
+    showing: '{{from}} - {{to}} de {{count}} itens'
+    single: Um item
+    single_plural: '{{count}} itens'

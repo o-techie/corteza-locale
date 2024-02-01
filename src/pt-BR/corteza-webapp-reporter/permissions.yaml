@@ -1,7 +1,31 @@
 ui:
-  reset-back: Redefinir para "{{current}}"
-  save-changes: Salvar alterações
+  save: Save changes
+  cancel: Cancel
   set-for: Definir permissões para {{target}}
+  loading: Carregando permissões
+
+  edit:
+    label: Papéis do usuário
+    description: Selecione o papel para definir as permissões
+
+  evaluate:
+    description: Avaliar permissões aplicadas
+
+  add:
+    label: Adicionar
+    title: Avaliar permissões
+    save: Salvar & Fechar
+    role:
+      label: Papeis
+      placeholder: Selecionar papel(éis)
+    user:
+      label: Usuários
+      placeholder: Procurar ou selecionar um usuário
+
+  tooltip:
+    unknown-context:
+      user: Não é possível avaliar a permissão para um usuário com função contextual em um recurso não específico
+      role: Não é possível avaliar a permissão para função contextual em um recurso não específico
 
   access:
     allow: Permitir
@@ -13,6 +37,7 @@ resources:
     report:
       all: todos os relatórios
       specific: relatório "{{target}}"
+      tooltip: Reportar permissões
       operations:
         delete:
           description: ""
@@ -20,8 +45,8 @@ resources:
           title: Excluir qualquer relatório
         read:
           description: ""
-          specific: Leia o relatório "{{target}}"
-          title: Leia qualquer relatório
+          specific: Ler o relatório "{{target}}"
+          title: Ler qualquer relatório
         run:
           description: ""
           specific: Executar relatório "{{target}}"

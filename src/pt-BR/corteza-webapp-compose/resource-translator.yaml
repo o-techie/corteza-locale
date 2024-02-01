@@ -2,14 +2,22 @@ translator:
   save-changes: Salvar
   add-language: Adicionar idioma
   missing-translation: Tradução ausente
+
 resources:
+  chart:
+    title: Gráfico "{{ handle }}"
   namespace:
     title: Namespace "{{ handle }}"
+    tooltip: Traduções de Namespace
   module:
     title: Módulo "{{ handle }}"
+    tooltip: Traduções de modulos
     field:
       title: Campo do módulo "{{ name }}"
+      tooltip: Traduções de campo
   page:
     title: Página "{{ handle }}"
+    tooltip: Traduções de página
     block:
       title: "Bloco de página #{{ blockID }}"
+      tooltip: Traduções de bloco

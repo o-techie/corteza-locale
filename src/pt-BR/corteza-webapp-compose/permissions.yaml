@@ -1,11 +1,38 @@
 ui:
-  reset-back: Redefinir para "{{current}}"
-  save-changes: Salvar alterações
+  save: Salvar alterações
+  cancel: Cancelar
   set-for: Definir permissões para {{target}}
+  loading: Carregando permissões
+
+  edit:
+    label: Papéis de usuário
+    description: Selecione um papel para definir as permissões
+
+  evaluate:
+    label: Avaliar
+    description: Avaliar permissões aplicadas
+
+  add:
+    label: Adicionar
+    title: Avaliar permissões
+    save: Salvar & Fechar
+    role:
+      label: Papéis
+      placeholder: Selecionar papel(éis)
+    user:
+      label: Users
+      placeholder: Procurar ou selecionar um usuário
+
+  tooltip:
+    unknown-context:
+      user: Não é possível avaliar a permissão para um usuário com função contextual em um recurso não específico
+      role: Não é possível avaliar a permissão para função contextual em um recurso não específico
+
   access:
     allow: Permitir
     inherit: Herdar
     deny: Negar
+
 resources:
   compose:
     chart:
@@ -13,59 +40,70 @@ resources:
       specific: gráfico "{{target}}"
       operations:
         delete:
-          description: 'Negação padrão'
+          description: 'Padrão: negar'
           specific: Excluir gráfico "{{target}}"
           title: Excluir qualquer gráfico
         read:
-          description: 'Negação padrão'
-          specific: Leia o gráfico "{{target}}"
-          title: Leia qualquer gráfico
+          description: 'Padrão: negar'
+          specific: Ler o gráfico "{{target}}"
+          title: Ler qualquer gráfico
         update:
-          description: 'Negação padrão'
+          description: 'Padrão: negar'
           specific: Atualizar gráfico "{{target}}"
           title: Atualizar qualquer gráfico
+
     module:
       all: todos os módulos
       specific: módulo "{{target}}"
+      tooltip: Module permissions
       operations:
         delete:
-          description: 'Negação padrão'
+          description: 'Padrão: negar'
           specific: Excluir módulo "{{target}}"
           title: Excluir qualquer módulo
         read:
-          description: 'Negação padrão'
-          specific: Leia o módulo "{{target}}"
-          title: Leia qualquer módulo
+          description: 'Padrão: negar'
+          specific: Ler o módulo "{{target}}"
+          title: Ler qualquer módulo
         record.create:
-          description: 'Negação padrão'
+          description: 'Padrão: negar'
           specific: Criar registro do módulo "{{target}}"
           title: Criar registro de qualquer módulo
         records.search:
-          description: 'Negação padrão'
+          description: 'Padrão: negar'
           specific: Listar e pesquisar registros do módulo "{{target}}"
           title: Liste e pesquise registros de qualquer módulo
         update:
-          description: 'Negação padrão'
+          description: 'Padrão: negar'
           specific: Atualizar módulo "{{target}}"
           title: Atualize qualquer módulo
+        'owned-record.create':
+          description: 'Padrão: negar'
+          specific: Gerenciar proprietário ao criar registro "{{target}}"
+          title: Gerencie o proprietário ao criar registro de qualquer módulo
+          all-specific: Manage owner when creating record of module "{{ target }}"
+
     module-field:
       all: todos os campos do módulo
       specific: campo "{{target}}"
       all-specific: todos os campos de módulo do módulo "{{ target }}"
+      tooltip: Module field permissions
       operations:
         record.value.read:
-          description: 'Negação padrão'
+          description: 'Padrão: negar'
           specific: 'Ler campos de registro "{{target}}" '
           title: Ler campos de registro de qualquer módulo
           all-specific: Ler campos de registro do módulo "{{ target }}"
         record.value.update:
-          description: 'Negação padrão'
+          description: 'Padrão: negar'
           specific: 'Atualizar campos de registro "{{target}}" '
           title: Atualizar campos de registro de qualquer módulo
           all-specific: Atualizar campos de registro do módulo "{{ target }}"
+
     namespace:
       all: todos os namespaces
       specific: namespace "{{target}}"
+      tooltip: Permissões do namespace
       operations:
         chart.create:
           description: ""
@@ -101,45 +139,59 @@ resources:
           title: Listar e pesquisar páginas em qualquer namespace
         read:
           description: ""
-          specific: Leia o namespace "{{target}}"
-          title: Leia qualquer namespace
+          specific: Ler o namespace "{{target}}"
+          title: Ler qualquer namespace
         update:
           description: ""
           specific: Atualizar namespace "{{target}}"
           title: Atualizar qualquer namespace
+
     page:
       all: todas as páginas
       specific: página "{{target}}"
+      tooltip: Page permissions
       operations:
         delete:
-          description: 'Negação padrão'
+          description: 'Padrão: negar'
           specific: Excluir página "{{target}}"
           title: Excluir qualquer página
         read:
-          description: 'Negação padrão'
-          specific: Leia a página "{{target}}"
-          title: Leia qualquer página
+          description: 'Padrão: negar'
+          specific: Ler a página "{{target}}"
+          title: Ler qualquer página
         update:
-          description: 'Negação padrão'
+          description: 'Padrão: negar'
           specific: Atualizar página "{{target}}"
           title: Atualizar qualquer página
+
     record:
       all: todos os registros
       specific: registro "{{target}}"
       all-specific: todos os registros do módulo "{{ target }}"
+      tooltip: Record permissions
       operations:
         delete:
-          description: 'Negação padrão'
+          description: 'Padrão: negar'
           specific: Excluir registro "{{target}}"
           title: Excluir registros de qualquer módulo
           all-specific: Excluir registros do módulo "{{ target }}"
         read:
-          description: 'Negação padrão'
+          description: 'Padrão: negar'
           specific: Ler registro "{{target}}"
           title: Ler registros de qualquer módulo
           all-specific: Ler registros do módulo "{{ target }}"
         update:
-          description: 'Negação padrão'
+          description: 'Padrão: negar'
           specific: Atualizar registro "{{target}}"
           title: Atualizar registros de qualquer módulo
           all-specific: Atualizar registros do módulo "{{ target }}"
+        'owner.manage':
+          description: 'Padrão: negar'
+          specific: Gerenciar proprietário do registro "{{target}}"
+          title: Gerenciar proprietários de registro de qualquer módulo
+          all-specific: Gerenciar proprietários de registro do módulo "{{ target }}"
+        'revisions.search':
+          description: 'Padrão: negar'
+          specific: Acessar revisões do registro "{{target}}"
+          title: Acessar revisões de registro
+          all-specific: Acessar revisões de registro

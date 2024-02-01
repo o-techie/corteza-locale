@@ -1,3 +1,4 @@
+
 'auto-initialize-empty-variable': Variáveis ​​que não podem ser carregadas serão inicializadas automaticamente como vazias
 back: Voltar
 'click-to-save': Clique aqui para salvar.
@@ -8,7 +9,7 @@ deleted: Excluído
 'detected-issues': Problemas detectados
 disabled: Desabilitado
 help: Ajuda
-handle: (Lidar)
+handle: (Identificador)
 id: "IDENTIFICAÇÃO"
 'id-parenthesis': " (IDENTIFICAÇÃO)"
 'initial-scope': Escopo inicial
@@ -26,5 +27,6 @@ save: Salvar
 spinning: Fiação
 'test-in-progress': "Teste em andamento. Se seu fluxo de trabalho inclui etapas de prompt ou atraso, pode estar aguardando a conclusão delas"
 'unsupported-browser': O navegador não é suportado!
+undelete: Recuperar
 'workflow-configuration': Configuração do fluxo de trabalho
 'editor': editor

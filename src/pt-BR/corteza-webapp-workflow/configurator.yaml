@@ -1,8 +1,14 @@
 configuration: Configuração
 edge: Borda
 target: Alvo
+tooltip:
+  run-workflow: Executar fluxo de trabalho
+  configure-step: Configurar etapa
 workflow:
-  'run-as': Correr como
+  'run-as': Executar como
   'not-setup-properly': Quando não definido explicitamente, o fluxo de trabalho será executado pelo usuário que o invocou
   invalid-handle-characters: Deve ter pelo menos 2 caracteres e começar com uma letra. Pode conter apenas letras, números, traço, sublinhado e ponto
   placeholder-handle: identificador (a - z, 0 - 9, sublinhado, traço)
+  sub-workflow:
+    label: Subfluxo de trabalho
+    description: Subfluxo de trabalho não pode conter disparadores habilitados

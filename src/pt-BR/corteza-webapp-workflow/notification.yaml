@@ -17,6 +17,10 @@ general:
   error: Erro
   success: Sucesso
   warning: Aviso
+  info: Info
+list:
+  load:
+    error: Falha ao resgatar fluxos de trabalho
 import:
   'failed-import': Falha ao importar
   'imported-workflows': Fluxos de trabalho importados
@@ -33,3 +37,6 @@ import:
 'trigger-paths-changed': Caminhos de gatilho alterados
 'updated-workflow': Fluxo de trabalho atualizado
 'workflow-test-completed': Teste de fluxo de trabalho concluído
+undelete:
+  success: Fluxo de trabalho restaurado
+  failed: Falha ao restaurar fluxo de trabalho

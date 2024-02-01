@@ -71,7 +71,10 @@ automation:
     warning: ""
   title: Lista de script de automação
 general:
+  resource-list:
+    no-items: No matches for your search
   notFound: 'Não encontrado'
+  loading: Loading
   label:
     "no": "Não"
     submit: Enviar
@@ -82,6 +85,9 @@ general:
   pagination:
     next: Próximo
     prev: Anterior
+    showing: '{{from}} - {{to}} de {{count}} itens'
+    single: Um item
+    single_plural: '{{count}} itens'
 navigation:
   adminPanel: Painel de administração
   automation: Automação

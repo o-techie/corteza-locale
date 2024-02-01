@@ -26,7 +26,7 @@ editor:
     createdAt: Criado em
     delete: Excluir
     deletedAt: Excluído em
-    handle: Lidar
+    handle: Identificador
     placeholder-handle: identificador (a - z, 0 - 9, sublinhado, traço)
     invalid-handle-characters: Deve ter pelo menos 2 caracteres e começar com uma letra. Pode conter apenas letras, números, traço, sublinhado e ponto
     meta:
@@ -47,15 +47,20 @@ list:
   columns:
     actions: ""
     createdAt: Criado
-    handle: Lidar
+    handle: Identificador
     language: Linguagem
     meta:
       short: Nome curto
+    state: Estado
+  export: Exportar
+  rows:
+    filters:
+      deleted: Remover
   filterForm:
     deleted:
-      label: modelos excluídos
+      label: modelos removidos
     excluded:
-      label: Sem
+      label: Excluindo
     exclusive:
       label: Apenas
     handle:

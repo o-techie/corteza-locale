@@ -1,11 +1,15 @@
 editor:
+  external-auth-providers:
+    label: Etiqueta
+    title: Gerenciar provedores externos
+    type: Tipo
   info:
     confirmEmail: Confirme o endereço de e-mail
     createdAt: Criado em
     delete: Excluir
     deletedAt: Excluído em
     email: E-mail
-    handle: Lidar
+    handle: Identificador
     placeholder-handle: identificador (a - z, 0 - 9, sublinhado, traço)
     invalid-handle-characters: Deve ter pelo menos 2 caracteres e começar com uma letra. Pode conter apenas letras, números, traço, sublinhado e ponto
     name: Nome completo
@@ -62,13 +66,19 @@ list:
     createdAt: Criado
     email: E-mail
     enabled: Habilitado
-    handle: Lidar
+    handle: Identificador
     name: Nome
+    state: Estado
+  export: Exportar
+  rows:
+    filters:
+      deleted: Removido
+      suspended: Suspendido
   filterForm:
     deleted:
-      label: usuários excluídos
+      label: usuários removidos
     excluded:
-      label: Sem
+      label: Excluindo
     exclusive:
       label: Apenas
     inclusive:
@@ -85,3 +95,14 @@ list:
   permissions: Permissões
   title: Comercial
   yaml: YAML
+export:
+  buttonLabel: Exportar
+  title: Exportar usuários
+  inclRoleMembership: Incluir papel de membro
+  inclRoles: Incluir papéis
+  membershipRequiredLabel: Os papéis só podem ser exportados quando a associação ao papel estiver selecionada
+  export: Exportar
+import:
+  buttonLabel: Importar
+  title: Importar usuários
+  uploadFilePlaceholder: Clique ou arraste arquivos aqui para importar

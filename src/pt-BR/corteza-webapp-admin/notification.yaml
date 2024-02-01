@@ -7,6 +7,9 @@ list:
   load:
     error: 'Falha ao carregar a lista de recursos'
 user:
+  external-auth-providers:
+    error: Falha ao regatar provedores externos
+    success: Provedores de autenticação externos atualizados
   fetch:
     error: Falha na busca do usuário
   roles:
@@ -38,6 +41,8 @@ user:
   unsuspend:
     success: Usuário cancelado
     error: Falha na suspensão do usuário
+  import:
+    success: Usuários importados com sucesso
 role:
   fetch:
     error: Falha na busca de função
@@ -127,6 +132,9 @@ queue:
   delete:
     success: Fila excluída
     error: Falha na exclusão da fila
+  undelete:
+    success: Fila restaurada
+    error: Falha ao restaurar fila
 gateway:
   fetch:
     error: Falha na busca de rota
@@ -168,6 +176,9 @@ session:
     error: Falha na busca de sessão
   trigger:
     error: Falha na busca do gatilho
+  cancel:
+    success: Sessão cancelada
+    error: Falha ao cancelar sessão
 federation:
   fetch:
     error: Falha na busca do nó
@@ -192,8 +203,24 @@ federation:
     success: Nó pareado
     error: Falha ao emparelhar o nó
   handshake:
-    success: Aperto de mão completo emparelhado
-    error: Falha no aperto de mão
+    success: Handshake completamente emparelhado
+    error: Falha ao realizar handshake
+sensitivityLevel:
+  create:
+    success: Nível de sensibilidade criado
+    error: Falha ao criar nível de sensibilidade
+  delete:
+    success: Nível de sensibilidade removido
+    error: Falha ao remover nível de sensibilidade
+  fetch:
+    success: Nível de sensibilidade resgatado
+    error: Falha ao resgatar nível de sensibilidade
+  undelete:
+    success: Nível de sensibilidade restaurado
+    error: Falha ao restaurar nível de sensibilidade
+  update:
+    success: Nível de sensibilidade atualizado
+    error: Falha ao atualizar nível de sensibilidade
 settings:
   system:
     fetch:
@@ -212,7 +239,10 @@ settings:
       error: Falha na atualização das configurações de composição
   ui:
     fetch:
-      error: Falha na busca das configurações da interface do usuário
+      error: Falha no resgate das configurações de UI
+    update:
+      success: Configurações de UI atualizadas
+      error: Falha na atualização das configurações de UI
 permissions:
   fetch:
     error: Falha na busca de permissões
@@ -223,5 +253,19 @@ permissions:
     success: Permissões clonadas
     error: Falha na clonagem de permissões
   role:
-    error: Falha ao adicionar função
-
+    error: Falha ao adicionar papel
+connection:
+  fetch:
+    error: Falha no resgate da conexão
+  update:
+    success: Conexão atualizada
+    error: Falha na atualização da conexão
+  create:
+    success: Conexão criada
+    error: Falha na criação da conexão
+  delete:
+    success: Conexão removida
+    error: Falha na remoção da conexão
+  undelete:
+    success: Conexão restaurada
+    error: Falha na restauração da conexão

@@ -1,5 +1,8 @@
+available-items: Campos disponíveis
+selected-items: Campos selecionados
 defaultFieldValue: Valor de campo padrão
 defaultValue: Valor padrão
+required-field: Este campo é obrigatório
 kind:
   bool:
     checkedValueLabel: Valor quando verificado
@@ -50,18 +53,44 @@ kind:
     prefixPlaceholder: Prefixo
     suffixLabel: Sufixo
     suffixPlaceholder: Sufixo
+    displayType:
+      label: Tipo de exibição
+      number: Número
+      progress: Barra de progresso
+    maximumValue: Valor máximo
+    progress:
+      animated: Animado
+      show:
+        value: Mostrar valor
+        relative: Mostrar relativo
+        progress: Mostrar progresso
+      showRelative: Mostrar relativo
+      variants:
+        default: Variante padrão
+        danger: Perigo
+        dark: Escuro
+        info: Info
+        light: Claro
+        primary: Primário
+        secondary: Secundário
+        success: Sucesso
+        warning: Aviso
+      thresholds:
+        label: Limites
+        description: Defina qual variante mostrar se o valor for igual ou maior que o limite
   record:
     currentUnnamedModule: (Módulo sem nome atual)
     label: Registro
     moduleLabel: Nome do módulo
     modulePlaceholder: Escolha o módulo
+    queryFieldsLabel: Campos de consulta na pesquisa
+    moduleField: Campo do módulo
+    fieldFromModuleField: Campo de rótulo do campo do módulo relacionado
+    pickField: Escolha o campo
+    suggestionPlaceholder: Comece a digitar para pesquisar registros
     prefilterFootnote: A sintaxe de condição SQL simplificada (WHERE ...) é suportada. Variáveis ​​como {{0}}, {{1}} e {{2}} são avaliadas (quando disponíveis)
     prefilterLabel: Registros de pré-filtro
-    prefilterPlaceholder: campo1 = 1 E campo2 = 232
-    queryFieldsLabel: Campos de consulta na pesquisa
-    recordFieldLabel: Gravar etiqueta do campo
-    recordFieldPlaceholder: Escolha o campo
-    suggestionPlaceholder: Comece a digitar para pesquisar registros
+    prefilterPlaceholder: campo1 = 1 AND campo2 = 232
   select:
     label: Selecionar
     optionAdd: Adicionar
@@ -81,6 +110,7 @@ kind:
     multiLine: Várias linhas
     richText: Usar Editor de Rich Text
   url:
+    example: 'Example URL: https://exemplo.com'
     label: URL
     preventToLink: Não transforme o URL em um link
     sshOnly: Permitir apenas URL SSL (https)
@@ -95,7 +125,14 @@ kind:
     roles:
       label: Funções do usuário
       placeholder: Filtrar por funções de usuário
+  geometry:
+    label: Geometria
+    latitude: Latitude
+    longitude: Longitude
+    clickToPlaceMarker: Clique para colocar um marcador ou clique em um marcador para removê-lo
+    initialZoomAndPosition: et initial map zoom and position
 noPermission: Sem permissão para ler o valor do campo
+no-items-found: Nenhum item encontrado
 options:
   description:
     label:
@@ -138,7 +175,19 @@ selector:
   selected: Campos selecionados
   systemField: (campo do sistema)
   unselectAll: Desmarque todos
+privacy:
+  sensitivity-level:
+    label: Nível de confidencialidade
+    placeholder: Selecione um nível de confidencialidade
+  usage-disclosure:
+    label: Divulgação de uso de campo confidencial (visível no console de privacidade de dados)
 system:
+  id: ID de Registro
+  moduleID: ID do Módulo
+  namespaceID: Namespace ID
+  revision: Revisão de registro
+  meta: Meta data
+  recordID: ID de Registro
   createdAt: Criado em
   createdBy: Criado por
   deletedAt: Excluído em
@@ -157,7 +206,7 @@ validators:
 valueExpr:
   description: Insira uma fórmula ou expressão que calcule valores numéricos ou combine e manipule valores de texto
   label: Expressão de valor de campo
-  placeholder: ((piso(numCampo1) + numCampo2) / 10) + 0,5
+  placeholder: ((floor(numCampo1) + numCampo2) / 10) + 0,5
 label:
   required: Requeridos
   multi: Vários valores

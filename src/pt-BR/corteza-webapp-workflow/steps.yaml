@@ -1,20 +1,26 @@
 break:
-  label: Pausa
+  label: Interromper
+  short: Interromper
   tooltip: Interrompa a execução do iterador e continue com o fluxo de trabalho
 continue:
   label: Continuar
+  short: Continuar
   tooltip: Parar a iteração atual e continuar com a próxima
 debug:
   label: Depurar
+  short: Depurar
   tooltip: Registra o escopo do fluxo de trabalho atual nos logs do servidor. Se a depuração do fluxo de trabalho estiver habilitada
 delay:
-  label: Atraso
+  label: Atrasar
+  short: Atrasar
   tooltip: Atrasa a execução do fluxo de trabalho
 error:
   label: Erro
+  short: Erro
   tooltip: Lança erro e interrompe a execução do fluxo de trabalho, também impede o salvamento de registros acionados com antes do acionador
-'error-handler':
+error-handler:
   label: Manipulador de erros
+  short:   label: Error Handler
   tooltip: Continue o fluxo de trabalho desta etapa se um erro for acionado
 expressions:
   configurator:
@@ -22,6 +28,7 @@ expressions:
     expression: Expressão
     'expression-placeholder': Expressão...
   label: Expressões
+  short: Expressões
   tooltip: Definir e alterar variáveis ​​de escopo
 function:
   configurator:
@@ -29,54 +36,73 @@ function:
     constant: Constante
     expression: Expressão
     name: Nome
-    'option-select': Selecione uma opção
+    option-select: Selecione uma opção
     result: Resultado
     results: Resultados
-    'select-function': Selecionar função
+    add-result: + Adicionar resultado
+    select-function: Selecionar função
     type: Tipo
-    'type*': 'Tipo*'
+    type*: Tipo*
   label: Função
+  short: Função
   tooltip: Execute a função predefinida escolhida
+exec-workflow:
+  label: Executar Fluxo de Trabalho
+  short: Fluxo de Trabalho
+  tooltip: Execute um fluxo de trabalho e mapeie variáveis de seu escopo para o atual
 gatewayExclusive:
-  label: Portão (Exclusivo)
+  label: Gateway (Exclusivo)
+  short: Gateway
   tooltip: A execução do fluxo de trabalho pode continuar no primeiro caminho que se encaixa na condição
 gatewayInclusive:
-  label: Portão (Incluso)
+  label: Gateway (Inclusivo)
+  short: Gateway
   tooltip: A execução do fluxo de trabalho pode continuar em todos os caminhos que se ajustem à condição
 gatewayParallel:
   label: Gateway (Fork/Join)
+  short: Gateway
   tooltip: Divide a execução do fluxo de trabalho em dois caminhos paralelos ou mescla vários caminhos em um
 gateway:
   configurator:
-    condition: Doença
-    'two-paths': O gateway deve ser a origem de pelo menos dois caminhos
+    condition: Condition
+    two-paths: O gateway deve ser a origem de pelo menos dois caminhos
 iterator:
   label: Iterador
+  short: Iterator
   tooltip: Iterar sobre os itens
 prompt:
-  label: Pronto
-  tooltip: Solicita o usuário e aguarda a entrada
+  label: Prompt
+  short: Prompt
+  tooltip: Requisita do usuário e aguarda a entrada
 swimlane:
-  label: Pista
-  tooltip: Etapas de grupo visualmente
+  label: Swimlane
+  short: Swimlane
+  tooltip: Agrupa visualmente as etapas
 termination:
-  label: Rescisão (Fim)
+  label: Termination (Fim)
+  short: Termination
   tooltip: Encerrar a execução do fluxo de trabalho
 trigger:
   configurator:
-    add: acrescentar
-    'add-constraints': + Adicionar restrições
+    add: + Adicionar
+    add-constraints: + Adicionar restrições
     constraints: Restrições
-    'event*': 'Evento*'
-    'failed-fetch-event-types': Falha ao buscar tipos de eventos
-    'initial-scope': Escopo inicial
+    event*': 'Evento*'
+    failed-fetch-event-types: Falha ao buscar tipos de eventos
+    initial-scope: Escopo inicial
+    equal: Igual
+    not-equal: Não igual
     like: Como
-    'not-like': Não parece
+    not-like: Não parece
     operator: Operador
     resource: Recurso
-    'resource*': 'Recurso*'
-    'select-constraint-type': Selecione o tipo de restrição
-    'select-event-type': Selecione o tipo de evento
-    'select-resource-type': Selecione o tipo de recurso
-  label: Acionador (Iniciar)
+    resource*': 'Recurso*'
+    select-constraint-type: Selecione o tipo de restrição
+    select-operator: Selecione o operador
+    select-event-type: Selecione o tipo de evento
+    select-resource-type: Selecione o tipo de recurso
+  label: Trigger (Iniciar)
+  short: Trigger
   tooltip: Acionar a execução do fluxo de trabalho com base na configuração
+tooltip:
+  configure-step: Configura a etapa

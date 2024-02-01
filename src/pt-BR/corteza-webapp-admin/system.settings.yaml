@@ -17,6 +17,10 @@ editor:
         min-num-count-description: A senha deve incluir a quantidade de números especificado (desativado se definido como 0)
         min-special-count: Número mínimo de caracteres especiais
         min-special-count-description: A senha deve incluir a quantidade de caracteres especiais especificado (desativado se definido como 0)
+        min-upper-case-length: Número mínimo de caracteres maiúsculos
+        min-upper-case-description: A senha deve incluir o número especificado de caracteres maiúsculos (desativado se definido como 0)
+        min-lower-case-length: Número mínimo de caracteres minúsculos
+        min-lower-case-description: A senha deve incluir o número especificado de caracteres minúsculos (desativado se definido como 0)
       signup:
         email-confirmation-required: Confirmação de e-mail de inscrição obrigatória
         enabled: Inscrição ativada
@@ -42,21 +46,26 @@ editor:
         expires:
           description: Por quanto tempo a senha será válida antes de expirar.
           label: Valido para
+
   external:
     title: Provedores de autenticação externa
     enabled: Ativar autenticação externa
+
     table:
       header:
         provider: Fornecedor
         info: Emissor, ID do cliente
+
+
     standard:
       enabled: Habilitado
       clientKey: Chave do cliente
       clientSecret: Segredo
+
     oidc:
       add: Adicionar um provedor OIDC
       enabled: Habilitado
-      handle: Lidar
+      handle: Identificador
       title: Conexão com OpenID
       issuer: URL do emissor OIDC
       issuerHint: Onde encontrar a /.well-known/openid-configuration (sem a parte /.well-known/openid-configuration)
@@ -65,6 +74,7 @@ editor:
       scope: Alcance
       scopePlaceholder: Listar os valores de escopo OAuth compatíveis
       scopeHint: Usar string delimitada por espaço
+
     saml:
       enabled: Habilitado
       title: SAML
@@ -100,8 +110,10 @@ editor:
           ident-handle: Nome do campo IdP usado para preencher o identificador de usuário ou apelido do Corteza
           ident-identifier: Nome do campo IdP usado para preencher e corresponder o e-mail do usuário do Corteza
           ident-name: Nome do campo IdP usado para preencher o nome completo do usuário Corteza
+
+
     security:
-      forbidden-roles:
+      prohibited-roles:
         description: As funções desta lista serão removidas do contexto de segurança ao autenticar com este provedor
         label: Funções proibidas
       forced-roles:

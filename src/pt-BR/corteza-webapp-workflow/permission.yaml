@@ -2,31 +2,31 @@ automationWorkflow:
   all: all workflows
   operations:
     delete:
-      description: 'Default: deny'
+      description: 'Padrão: negar'
       specific: Delete this workflow
       title: Delete any workflow
     execute:
-      description: 'Default: deny'
+      description: 'Padrão: negar'
       specific: Execute this workflow
       title: Execute any workflow
     read:
-      description: 'Default: deny'
+      description: 'Padrão: negar'
       specific: Read this workflow
       title: Read any workflow
     sessionsManage:
-      description: 'Default: deny'
+      description: 'Padrão: negar'
       specific: Manage sessions for this workflow
       title: Manage all sessions
     triggersManage:
-      description: 'Default: deny'
+      description: 'Padrão: negar'
       specific: Manage triggers for this workflow
       title: Manage all triggers
     undelete:
-      description: 'Default: deny'
+      description: 'Padrão: negar'
       specific: Undelete this workflow
       title: Undelete any workflow
     update:
-      description: 'Default: deny'
+      description: 'Padrão: negar'
       specific: Update this workflow
       title: Update any workflow
   specific: workflow "{{target}}"

@@ -12,14 +12,17 @@ editor:
     resourceType: Tipo de recurso
     status: Status
     title: Informação básica
-    workflowID: Código do fluxo de trabalho
+    workflowID: WorkflowID
+    openWorkflow: Abrir fluxo de trabalho
+    cancel: Cancelar sessão
   title: Sessão
 list:
   columns:
     actions: ""
     createdAt: Criado em
     eventType: Tipo de evento
-    sessionID: Identificação de sessão
+    sessionID: SessionID
+    state: Estado
     status: Status
     workflowID: Código do fluxo de trabalho
   filterForm:

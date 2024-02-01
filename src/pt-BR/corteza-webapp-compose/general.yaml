@@ -1,20 +1,28 @@
 label:
+  app-name:
+    public: Baixo Código
+    private: Baixo Código - Admin
   actions: Ações
   active: Ativo
   add: Adicionar
+  add-with-plus: + Adicionar
   addNew: Adicionar novo
   addValue: Adicionar novo valor
+  ascending: Crescente
   attachmentFileInfo: '(Tamanho do arquivo {{0}}, enviado {{1}})'
   attributes: Atributos
   back: Voltar
   backWithoutSave: Voltar (sem salvar as alterações)
+  block: Bloco
   browse: Navegar
   buttons: Botões
   cancel: Cancelar
+  clear: Limpar
   clone: Clonar
   close: Fechar
-  create: Crio
+  create: Criar
   delete: Excluir
+  descending: Decrescente
   description: Descrição
   download: Download
   dropFiles: Clique ou solte os arquivos aqui para fazer upload
@@ -22,8 +30,8 @@ label:
   enabled: Habilitado
   export: Exportar
   fileTypeNotAllowed: Tipo de arquivo não permitido
-  general: Em geral
-  handle: Lidar
+  general: Geral
+  handle: Identificador
   here: aqui
   import: Importar
   importPlaceholder: Carregar arquivos para importar
@@ -37,11 +45,13 @@ label:
   "no": "Não"
   noHandle: Sem alça
   none: Nenhum
+  now: Agora
   ok: OK
   openBookmarks: Abrir favoritos
   pageBuilder: Criador de páginas
   permissions: Permissões
   private: Privado
+  privacy: Privacidade
   processing: Em processamento...
   record: Registro
   recordPage: Página de registro
@@ -49,11 +59,14 @@ label:
   remove: Remover
   removeDefault: Remover padrão
   required: Requeridos
+  reset: Resetar
+  sensitive: Confidencial
   save: Salvar
   saveAndClose: Salvar e fechar
   status: Status
   timeHour: '{{t}}h'
   timeMinute: '{{t}}min'
+  today: Hoje
   title: Título
   type: Tipo
   updatedAt: Atualizado em
@@ -62,7 +75,7 @@ label:
   urlPlaceholder: https://exemplo.tld
   validation: Validação
   view: Visualizar
-  "yes": "Sim"
+  yes: Sim
 navigation:
   chart: Gráficos
   namespace: Namespaces
@@ -88,6 +101,7 @@ reminder:
   snooze: Soneca
 tooltip:
   dragAndDrop: Arraste e solte para alterar a ordem
+  field: Configurar campo
 fieldKinds:
   Bool:
     label: Caixa de seleção (S/N)
@@ -113,7 +127,18 @@ fieldKinds:
     label: Geometria
 field:
   selectAll: Selecionar tudo
+  tooltip:
+    permissions: Permissões de campo
   unselectAll: Desmarque todos
   kind:
     user:
       suggestionPlaceholder: Comece a digitar para pesquisar usuários por e-mail ou nome
+resourceList:
+  notFound: Não encontrado
+  noItems: Sem itens para mostrar
+  pagination:
+    next: Próximo
+    prev: Anterior
+    showing: '{{from}} - {{to}} de {{count}} itens'
+    single: Um item
+    single_plural: '{{count}} itens'

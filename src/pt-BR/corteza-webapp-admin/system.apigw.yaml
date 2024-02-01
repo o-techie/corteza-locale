@@ -1,7 +1,9 @@
 list:
+  export: Exportar
   title: 'Porta de Integração'
   new: 'Novo'
   permissions: 'Permissões'
+  profiler: 'Profiler'
   yaml: 'YAML'
   loading: 'Carregando rotas'
   numFound: '{{count}} rota encontrada'
@@ -11,33 +13,47 @@ list:
       label: 'Filtrar lista de rotas'
       placeholder: 'Filtrar rotas por nome'
     excluded:
-      label: 'Sem'
+      label: 'Excluindo'
     inclusive:
       label: 'Incluindo'
     exclusive:
       label: 'Apenas'
     deleted:
-      label: 'Rotas excluídas'
+      label: 'Rotas removidas'
+    handle:
+      placeholder: 'Filtrar ponto de extremidade por caminho'
+
   columns:
     endpoint: 'Ponto de extremidade'
     createdAt: 'Criado'
     enabled: 'Habilitado'
+    method: 'Método'
     actions: ''
+    state: Estado
+  rows:
+    filters:
+      deleted: Removido
+
 editor:
   title: 'Editar rota'
   new: 'Novo'
   permissions: 'Permissões'
+
   info:
     title: 'Informação básica'
-    id: 'IDENTIFICAÇÃO'
+
+    id: 'ID'
     endpoint: 'Ponto de extremidade'
     method: 'Método'
     enabled: 'Habilitado'
-    delete: 'Excluir'
+
+    delete: 'Remover'
     undelete: 'Recuperar'
-    deletedAt: 'Excluído em'
+    deletedAt: 'Removido em'
+
     updatedAt: 'Atualizado em'
     createdAt: 'Criado em'
+
     tooltip: 'O endpoint deve começar com uma barra "/" e não pode conter nenhum caractere especial, exceto o sublinhado "_" e o hífen "-"'
     validation:
       slash: 'O endpoint deve começar com uma barra "/"'
@@ -47,13 +63,16 @@ editor:
     title: 'Lista de filtros'
     enabled: 'Habilitado'
     disabled: 'Desabilitado'
+
     modal:
       title: 'Verificador de parâmetros de consulta'
       ok: 'Salvar fechar'
+
     step_title:
       prefilter: 'Pré-filtragem'
       processer: 'Em processamento'
       postfilter: 'Pós-filtragem'
+
     list:
       remove: 'Remover'
       filters: 'Filtros'
@@ -61,28 +80,93 @@ editor:
       actions: 'Ações'
       active: 'Ativo'
       noFilters: 'Sem filtros'
+
     labels:
       expr: 'Expressão'
       location: 'URL'
       workflow: 'Fluxo de trabalho'
       status: 'Estado HTTP'
       jsfunc: 'Função'
+      input: 'Entrada'
+
     httpStatus:
-      none: Sem status
-      '300': 300 - Múltiplas Escolhas
-      '301': 301 mudou-se permanentemente
-      '302': 302 - Encontrado
-      '303': 303 - Ver Outros
-      '304': 304 - Não Modificado
-      '307': 307 - Redirecionamento Temporário
-      '308': 308 - Redirecionamento Permanente
+      none: 'No Status'
+      '300': '300 - Multiple Choices'
+      '301': '301 - Moved Permanently'
+      '302': '302 - Found'
+      '303': '303 - See Other'
+      '304': '304 - Not Modified'
+      '307': '307 - Temporary Redirect'
+      '308': '308 - Permanent Redirect'
+
     placeholders:
       workflow: 'Selecione um fluxo de trabalho'
+
     add: 'Adicionar'
     addFilter: 'Adicionar filtro'
-    params: 'Param'
+    params: 'Parâmetros'
     filterListEmpty: 'A lista de filtros está vazia!'
+
     help:
       expression:
-        example: Exemplo == "match string" && match(SecondParam, "^foo\\s.*$")
+        example: 'Exemplo == "match string" && match(SecondParam, "^foo\\s.*$")'
         link: Documentação
+
+profiler:
+  label: 'Profiler'
+  title: 'Integration Gateway Profiler'
+  refreshingIn: Atualizando em {{seconds}}s
+  description: 
+    globalEnabled: 'Mostrando rotas para todas as requisições de entrada'
+    globalDisabled: 'Mostrando apenas rotas registradas com pré-filtro de profiler'
+
+  hit:
+    title: 'Detalhes da Requisição'
+    general:
+      label: Geral
+      id: 'ID Requisição'
+      route: 'Rota da Requisição'
+      URL: 'URL da Requisição'
+      method: 'Método da Requisição'
+      statusCode: 'Código de Status'
+      headers: 'Cabeçalho da Requisição'
+      remoteAddress: 'Endereço Remoto'
+      duration: 'Duração'
+      start: 'Início'
+      end: 'Fim'
+      openRoute: Abrir Rota
+    headers:
+      label: 'Cabeçalhos'
+    body:
+      label: 'Corpo'
+
+
+  filterForm:
+    query:
+      label: 'Filtrar lista de rota'
+      placeholder: 'Filtrar rotas pelo nome'
+    excluded:
+      label: 'Excluindo'
+    inclusive:
+      label: 'Incluindo'
+    exclusive:
+      label: 'Apenas'
+    deleted:
+      label: 'Rotas removidas'
+
+  columns:
+    actions: ''
+    path: 'Rota'
+    count: 'Contagem'
+    content_length: 'Tamanho do Conteúdo'
+    http_method: 'Método'
+    http_status_code: 'Código de Status'
+    size_min: 'Tamanho (min)'
+    size_max: 'Tamanho (max)'
+    size_avg: 'Tamanho (med)'
+    time_min: 'Tempo (min)'
+    time_max: 'Tempo (max)'
+    time_avg: 'Tempo (med)'
+    time_start: 'Tempo de início'
+    time_finish: 'Tempo de término'
+    time_duration: 'Duração'

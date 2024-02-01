@@ -1,9 +1,6 @@
 add:
-  label: Adicionar
-  with-plus: '+ Adicionar'
   datasource: Adicionar fonte de dados
   display-element: Adicionar elemento de exibição
-ascending: Crescente
 available: Disponível
 block:
   description: Descrição do bloco
@@ -14,18 +11,20 @@ datasource:
   label: Fonte de dados
   types:
     load:
-      label: Carga
+      label: Load
       loads-data-from-specified-resource-such-as-compose-records: Carrega dados de um recurso especificado, como Compor registros
+    link:
+      label: Link
+      load-datasources: Vincula duas fontes de dados de carregamento com uma coluna exclusiva que as vincula, como um seletor de registros do Compose
     join:
-      label: Junte-se
+      label: Join
       joins-two-load-datasources-such-as-compose-record-selector: Une duas fontes de dados de carga com uma coluna exclusiva que as vincula, como um seletor de registro de composição
     group:
-      label: Grupo
+      label: Aggregate
       groups-data-from-load-datasource-like-counting-number-of-accounts-with-same-status: Agrupa dados de uma fonte de dados de carregamento com base em um valor de coluna e os agrega, como contar o número de contas com o mesmo status
 datasources:
   label: Fontes de dados
   save: Salvar fontes de dados
-descending: Decrescente
 description: Descrição
 display-elements:
   types:
@@ -37,7 +36,6 @@ element: Elemento
 elements: Elementos
 filter-expression: Expressão de filtro
 general: Em geral
-grab: '.grab'
 joined-datasource-handling: Manipulação de fonte de dados associada
 layout: Esquema
 layout-options:
@@ -45,7 +43,6 @@ layout-options:
   vertical: Vertical
 limit: Limite
 no-blocks-added: Nenhum bloco adicionado ainda
-none: Nenhum
 or: Ou
 pick-scenario: Escolha um cenário
 prefilter: Pré-filtro
@@ -58,10 +55,17 @@ scenarios:
   label: Cenários
   save: Salvar cenários
 title: Título
+tooltip:
+  edit:
+    report: Editar relatório
+    block: Editar bloco
+  configure-scenarios: Configurar cenários
 available-columns: Colunas disponíveis
 selected-columns: Colunas selecionadas
+no-columns-found: Nenhuma coluna encontrada
 type-to-search: Digite aqui para pesquisar entre as colunas
 selected: Selecionado
 select-all: Selecionar tudo
 unselect-all: Desmarque todos
 value: Valor
+name: Name

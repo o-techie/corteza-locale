@@ -2,15 +2,15 @@ composeChart:
   all: all charts
   operations:
     delete:
-      description: 'Default: deny'
+      description: 'Padrão: negar'
       specific: Delete chart "{{target}}"
       title: Delete any chart
     read:
-      description: 'Default: deny'
+      description: 'Padrão: negar'
       specific: Read chart "{{target}}"
       title: Read any chart
     update:
-      description: 'Default: deny'
+      description: 'Padrão: negar'
       specific: Update chart "{{target}}"
       title: Update any chart
   specific: chart "{{target}}"
@@ -18,23 +18,23 @@ composeModule:
   all: all modules
   operations:
     delete:
-      description: 'Default: deny'
+      description: 'Padrão: negar'
       specific: Delete module "{{target}}"
       title: Delete any module
     read:
-      description: 'Default: deny'
+      description: 'Padrão: negar'
       specific: Read module "{{target}}"
       title: Read any module
     recordCreate:
-      description: 'Default: deny'
+      description: 'Padrão: negar'
       specific: Create record of module "{{target}}"
       title: Create record of any module
     recordsSearch:
-      description: 'Default: deny'
+      description: 'Padrão: negar'
       specific: List and search records of module "{{target}}"
       title: List and search records of any module
     update:
-      description: 'Default: deny'
+      description: 'Padrão: negar'
       specific: Update module "{{target}}"
       title: Update any module
   specific: module "{{target}}"
@@ -42,11 +42,11 @@ composeModuleField:
   all: all module fields
   operations:
     recordValueRead:
-      description: 'Default: deny'
+      description: 'Padrão: negar'
       specific: 'Read "{{target}}" record fields '
       title: Read record fields of any module
     recordValueUpdate:
-      description: 'Default: deny'
+      description: 'Padrão: negar'
       specific: 'Update "{{target}}" record fields '
       title: Update record fields of any module
   specific: field "{{target}}"
@@ -98,15 +98,15 @@ composePage:
   all: all pages
   operations:
     delete:
-      description: 'Default: deny'
+      description: 'Padrão: negar'
       specific: Delete page "{{target}}"
       title: Delete any page
     read:
-      description: 'Default: deny'
+      description: 'Padrão: negar'
       specific: Read page "{{target}}"
       title: Read any page
     update:
-      description: 'Default: deny'
+      description: 'Padrão: negar'
       specific: Update page "{{target}}"
       title: Update any page
   specific: page "{{target}}"
@@ -114,15 +114,15 @@ composeRecord:
   all: all records
   operations:
     delete:
-      description: 'Default: deny'
+      description: 'Padrão: negar'
       specific: Delete record
       title: Delete records of any module
     read:
-      description: 'Default: deny'
+      description: 'Padrão: negar'
       specific: Read record
       title: Read records of any module
     update:
-      description: 'Default: deny'
+      description: 'Padrão: negar'
       specific: Update record
       title: Update records of any module
   specific: record

@@ -6,7 +6,7 @@ editor:
     enabled: Habilitado
     id: identificação
     name: Nome
-    title: Informação básica
+    title: Informações básicas
     undelete: Recuperar
     updatedAt: Atualizado em
   new: Novo

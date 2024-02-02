@@ -1,0 +1,11 @@
+list:
+  title: Módulos de Confidencialidade
+  columns:
+    module: Módulo
+    namespace: Namespace
+    connection: Conexão
+    location: Local
+    ownership:  Propriedade
+  module:
+    enable: Ativar módulos
+    disable: Desativar módulos

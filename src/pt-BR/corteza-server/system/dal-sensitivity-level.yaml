@@ -1,0 +1,8 @@
+errors:
+  alreadyExists: nível de confidencialidade com esse DNS já existe
+  existsEndpoint: nível de confidencialidade com este DNS já existe
+  generic: falha ao concluir o pedido devido a um erro interno
+  invalidEndpoint: endpoint inválido
+  invalidID: ID inválido
+  notAllowedToManage: não autorizado a gerenciar o nível de confidencialidade
+  notFound: nível de confidencialidade não encontrado

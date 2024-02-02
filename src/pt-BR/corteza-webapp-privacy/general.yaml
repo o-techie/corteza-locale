@@ -1,0 +1,15 @@
+label:
+  back: Voltar
+
+resourceList:
+  loading: Carregando
+  noItems: Sem itens
+  notFound: Não encontrado
+  search:
+    placeholder: Digite aqui para procurar itens
+  pagination:
+    next: Próximo
+    prev: Anterior
+    showing: '{{from}} - {{to}} de {{count}} itens'
+    single: Um item
+    single_plural: '{{count}} itens'

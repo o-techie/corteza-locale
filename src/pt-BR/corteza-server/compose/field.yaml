@@ -1,0 +1,14 @@
+system:
+  ID: ID de Registro
+  moduleID: ID do Módulo
+  namespaceID: ID do Namespace
+  revision: Revisão do registro
+  meta: Metadados
+  recordID: ID do Registro
+  createdAt: Criado em
+  createdBy: Criado por
+  deletedAt: Deletado em
+  deletedBy: Deletado por
+  ownedBy: Apropriado por
+  updatedAt: Atualizado em
+  updatedBy: Atualizado por

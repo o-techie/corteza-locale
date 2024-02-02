@@ -1,0 +1,16 @@
+label:
+  plus-add: + Adicionar
+  clear: Limpar
+  none: Nenhum
+  now: Agora
+  today: Hoje
+  routes: Rotas
+  requests: Requisições
+  refresh: Atualizar
+  loadMore: Carregar mais
+  loading: Carregando
+  submit: Submeter
+  delete: Deletar
+  undelete: Recuperar
+  fileTypeNotAllowed: Tipo de arquivo não permitido
+

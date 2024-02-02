@@ -1,0 +1,19 @@
+title: Visão geral dos dados
+
+data-types:
+  profile-information:
+    title: Informação do Perfil
+    description: Suas informações de contato, nomes, sobrenome, apelido, foto do perfil
+  application-data:
+    title: Dados de Aplicativos
+    description: Seus dados pessoais armazenados no Corteza
+
+application:
+  title: Dados do Aplicativo
+  connection:
+    label: Conexão
+    placeholder: Selecione uma conexão
+  no-data-available: Nenhum dado disponível
+  private-fields: Campos privados
+  request-correction: Requisitar Correção
+  request-deletion: Requisitar Remoção

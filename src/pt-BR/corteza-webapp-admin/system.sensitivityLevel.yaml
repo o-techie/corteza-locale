@@ -1,0 +1,42 @@
+editor:
+  new: Novo
+  title:
+    create: Criar nível de confidencialidade
+    edit: Editar nível de confidencialidade
+  info:
+    title: Informações básicas
+    handle:
+      label: Identificador
+      placeholder: identificador (a - z, 0 - 9, underscore, dash)
+      invalid-characters: Deve ter pelo menos 2 caracteres e começar com uma letra. Pode conter apenas letras, números, travessões, sublinhados e pontos
+    name: Nome
+    description: Descrição
+    new: Nível {{level}}
+    createdAt: Criado em
+    delete: Excluir
+    deletedAt: Excluído em
+    undelete: Recuperar
+    updatedAt: Atualizado em
+
+list:
+  title: Nível de confidencialidade
+  loading: Carregando níveis de confidencialidade
+  new: Novo
+  columns:
+    actions: ''
+    'meta.name': Nome
+    level: Nível
+    createdAt: Criado em
+    state: Estado
+  rows:
+    filters:
+      deleted: Excluído
+  filterForm:
+    deleted:
+      label: níveis de confidencialidade excluídos
+    excluded:
+      label: Excluindo
+    exclusive:
+      label: Apenas
+    inclusive:
+      label: Incluindo

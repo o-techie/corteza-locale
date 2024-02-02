@@ -1,0 +1,11 @@
+general:
+  error: Erro
+  success: Sucesso
+  warning: Aviso
+search:
+  failed: Busca falhou
+list:
+  load:
+    error: Falhou ao carregar lista de recursos
+connection-load-failed: Falhou ao carregar conexões
+sensitive-data-fetch-failed: Falhou ao resgatar dados sensíveis

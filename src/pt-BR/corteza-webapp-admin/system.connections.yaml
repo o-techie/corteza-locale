@@ -1,0 +1,110 @@
+primary:
+  title: Banco de dados principal
+  name: Nome
+  handle: Identificador
+  location: Localização
+  ownership: Propriedade
+  sensitivity-new: Nível de confidencialidade
+
+list:
+  title: Lista de conexões de banco de dados
+  add-button: Adicionar conexão
+  loading: Carregando conexões
+  filterForm:
+    deleted:
+      label: conexões excluídas
+    excluded:
+      label: Excluindo
+    exclusive:
+      label: Somente
+    inclusive:
+      label: Incluindo
+  columns:
+    name: Nome
+    location: Localização
+    ownership: Propriedade
+    createdAt: Criado
+
+editor:
+  title:
+    edit: Editar conexão
+    create: Nova conexão
+  basic:
+    title: Configurações básicas
+    form:
+      name:
+        label: Nome
+        placeholder: Lago de dados
+        description: ''
+      handle:
+        label: Identificador
+        placeholder: nome_da_conexao_simplificada
+        description:
+        invalid-characters: Deve ter pelo menos 2 caracteres e começar com uma letra. Pode conter apenas letras, números, traços, sublinhados e pontos
+      location-name:
+        label: Nome da localização
+        placeholder: Nome da localização onde os dados são armazenados
+        description: Nome da cidade, país, continente, etc.
+      location-geometry:
+        label: Coordenadas da localização
+        description: Coordenadas da localização onde os dados são armazenados
+        placeholder:
+      ownership:
+        label: Propriedade
+        placeholder: ACME ltd.
+        description: Nome da empresa ou pessoa que possui os dados
+      sensitivity-level:
+        label: Nível de confidencialidade permitido mais alto
+        placeholder: Selecione um nível de confidencialidade
+        description: Nível de confidencialidade permitido mais alto para os dados armazenados (conforme definido nos campos do módulo que utiliza essa conexão)
+
+  properties:
+    title: Propriedades da conexão e do banco de dados
+    form:
+      data-at-rest-encryption:
+        checkbox:
+          label: Criptografia de dados em repouso ativada
+        notes:
+          label: Notas sobre criptografia
+          description: Notas internas sobre criptografia de dados em repouso (criptografia de disco)
+      data-at-rest-protection:
+        checkbox:
+          label: Proteção de dados em repouso fornecida
+        notes:
+          label: Notas sobre proteção de dados em repouso
+          description: Notas internas sobre proteção de dados em repouso (proteção física)
+      data-at-transit-encryption:
+        checkbox:
+          label: Criptografia de dados em trânsito ativada
+        notes:
+          label: Notas sobre criptografia de dados em trânsito (criptografia de rede)
+          description: Notas internas sobre criptografia de dados em trânsito (criptografia de rede)
+      data-restoration:
+        checkbox:
+          label: Backup e restauração de dados em repouso implementados
+        notes:
+          label: Notas sobre restauração de dados
+          description: Notas internas sobre restauração de dados em repouso
+
+  dal:
+    title: Configuração da camada de acesso aos dados e parâmetros de conexão
+    form:
+      model-ident:
+        label: Nome padrão da tabela ou contêiner
+        placeholder: compose_record
+        description: |
+          O identificador pode conter espaços reservados como {{module}} (substituído pelo identificador do módulo) e/ou {{namespace}} (substituído pelo identificador do namespace).
+          Quando definido, é usado como padrão para módulos sem identificação de configuração.
+
+      type:
+        label: Tipo de conexão e parâmetro
+        placeholder: corteza::dal:connection:dsn
+        description: Tipo da conexão e parâmetro, por exemplo, corteza::dal:connection:dsn
+
+      params:
+        label: Parâmetros de conexão
+        placeholder: postgres://user:pass@host:port/dbname
+        description: 'Parâmetros de conexão, por exemplo: {"dsn": "postgres://user:pass@host:port/dbname"}'
+
+    connectivity-issues: Problemas de conexão
+    no-access-warning: Sem permissão para gerenciar a configuração da camada de acesso aos dados e os parâmetros de conexão para esta conexão

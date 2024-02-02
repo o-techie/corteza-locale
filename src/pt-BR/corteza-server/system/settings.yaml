@@ -1,0 +1,8 @@
+errors:
+  notAllowedToRead: não está autorizado a ler esta configuração
+  notAllowedToManage: não está autorizado a gerenciar esta configuração
+  invalidPasswordMinLength: o comprimento mínimo da senha deve ter pelo menos 8 caracteres
+  invalidPasswordMinUpperCase: a contagem mínima de letras maiúsculas na senha não deve ser um número negativo
+  invalidPasswordMinLowerCase: a contagem mínima de letras minúsculas na senha não deve ser um número negativo
+  invalidPasswordMinNumCount: a contagem mínima de números na senha não deve ser um número negativo
+  invalidPasswordMinSpecialCharCount: a contagem mínima de caracteres especiais na senha não deve ser um número negativo
